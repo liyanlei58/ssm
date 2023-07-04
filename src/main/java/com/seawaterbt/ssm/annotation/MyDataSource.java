@@ -14,6 +14,6 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.TYPE})
-public @interface DataSource {
+public @interface MyDataSource {
     DataSourceEnum value() default DataSourceEnum.DB1;
 }

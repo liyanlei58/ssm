@@ -1,3 +1,7 @@
+###代码
+
+https://gitee.com/wbsxch/ssm/tree/master/src/main/resources
+
 ### 测试方法
 ##### 使用idea的Tools-->HTTP Client-->Test RestFul web Service
 测试数据如下

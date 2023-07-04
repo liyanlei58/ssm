@@ -21,6 +21,8 @@ mybatis-plus:
     refresh-mapper: true
     #数据库大写下划线转换
     #capital-mode: true
+    # Sequence序列接口实现类配置
+    key-generator: com.baomidou.mybatisplus.incrementer.OracleKeyGenerator
     #逻辑删除配置（下面3个配置）
     logic-delete-value: 4
     logic-not-delete-value: 0
@@ -32,20 +34,18 @@ mybatis-plus:
     jdbc-type-for-null: 'null'
 spring:
   datasource:
-      druid:
-          db1:
-              username: root
-              password: 123456
-              driver-class-name: com.mysql.jdbc.Driver
-              url: jdbc:mysql:///db1
-              initialSize: 5
-              minIdle: 5
-              maxActive: 20
-          db2:
-              username: root
-              password: 123456
-              driver-class-name: com.mysql.jdbc.Driver
-              url: jdbc:mysql:///db2
-              initialSize: 5
-              minIdle: 5
-              maxActive: 20
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 5
+      db1:
+        url: jdbc:mysql://localhost:3306/db1?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&useInformationSchema=true
+        username: root
+        password: fuyu234789
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      db2:
+        url: jdbc:mysql://localhost:3306/db2?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&useInformationSchema=true
+        username: root
+        password: fuyu234789
+        driver-class-name: com.mysql.cj.jdbc.Driver
+

@@ -1,7 +1,7 @@
 package com.seawaterbt.ssm.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.seawaterbt.ssm.entity.Teacher;
+import com.seawaterbt.ssm.entity.EnglishTeacher;
 
-public interface TeacherMapper extends BaseMapper<Teacher> {
+public interface EnglishTeacherMapper extends BaseMapper<EnglishTeacher> {
 }

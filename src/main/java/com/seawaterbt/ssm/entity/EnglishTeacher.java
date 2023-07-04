@@ -9,8 +9,8 @@ import lombok.Data;
 
 @Api("老师实体对象")
 @Data
-@TableName("t_teacher")
-public class Teacher {
+@TableName("t_teacher_english")
+public class EnglishTeacher {
 
     @ApiModelProperty("老师id")
     @TableId(type = IdType.AUTO)
